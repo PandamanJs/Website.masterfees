@@ -32,3 +32,6 @@ waitForPort = 3000
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[agent]
+integrations = ["flask_supabase==1.0.0"]

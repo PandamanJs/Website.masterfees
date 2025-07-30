@@ -2,7 +2,7 @@
 
 ## Overview
 
-Master-Fees is a comprehensive school fee management application built with React and TypeScript. It provides educational institutions with tools to manage student fees, track payments, generate reports, and integrate with external systems like QuickBooks. The application features a multi-step onboarding process for new schools and a dashboard-driven interface for day-to-day operations.
+Master-Fees is a comprehensive school fee management application built with React, TypeScript, and Next.js. It provides educational institutions with tools to manage student fees, track payments, generate reports, and integrate with external systems like QuickBooks. The application features a clean, modern dashboard interface for day-to-day operations and a multi-step onboarding process for new schools.
 
 ## User Preferences
 
