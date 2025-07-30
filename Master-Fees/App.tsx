@@ -6,7 +6,7 @@ import { useRealTimeNotifications } from "./utils/hooks/useRealTimeNotifications
 import Group1000005059 from "./imports/Group1000005059";
 import Frame1707478532 from "./imports/Frame1707478532";
 import Frame1707478528 from "./imports/Frame1707478528";
-import FeeMasterLoginPage from "./imports/FeeMasterLoginPage-62-2995";
+import LoginPage from "./components/LoginPage";
 import OnboardingPage from "./components/OnboardingPage";
 import DetailedOnboardingPage from "./components/DetailedOnboardingPage";
 import FinalOnboardingPage from "./components/FinalOnboardingPage";
@@ -238,15 +238,11 @@ export default function App() {
 
   if (appState === 'login') {
     return (
-      <div className="login-container">
-        <div className="login-card">
-          <FeeMasterLoginPage
-            onLogin={handleLogin}
-            onSignup={() => setAppState('signup')}
-            onForgotPassword={handleForgotPassword}
-          />
-        </div>
-      </div>
+      <LoginPage
+        onLogin={handleLogin}
+        onSignup={() => setAppState('signup')}
+        onForgotPassword={handleForgotPassword}
+      />
     );
   }
 
