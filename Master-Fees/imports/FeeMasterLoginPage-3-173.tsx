@@ -1,5 +1,6 @@
 import svgPaths from "./svg-z08ybc5ltf";
-import imgFeeMasterLoginPage from "figma:asset/ad73bfddb9e0d1de9c311e9886bad9067f61e75a.png";
+// import imgFeeMasterLoginPage from "figma:asset/ad73bfddb9e0d1de9c311e9886bad9067f61e75a.png";
+const imgFeeMasterLoginPage = "/placeholder.png";
 
 function Frame30072() {
   return <div className="absolute h-6 left-[510px] top-[182px] w-[338px]" />;

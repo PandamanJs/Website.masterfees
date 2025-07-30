@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import svgPaths from "./imports/svg-2g3736nywj";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { api } from "./utils/supabase/api";
 import { useRealTimeNotifications } from "./utils/hooks/useRealTimeNotifications";
 import Group1000005059 from "./imports/Group1000005059";
@@ -1625,13 +1625,13 @@ export default function App() {
         productGroups: formData.productGroups
       });
 
-      if (response.success && response.schoolId) {
-        setSchoolId(response.schoolId);
+      if (response.success && response.data?.schoolId) {
+        setSchoolId(response.data.schoolId);
         setSchoolName(formData.schoolName);
         setAppState('dashboard');
         
         // Save to localStorage for persistence
-        localStorage.setItem('master_fees_school_id', response.schoolId);
+        localStorage.setItem('master_fees_school_id', response.data.schoolId);
         localStorage.setItem('master_fees_school_name', formData.schoolName);
         
         toast.success(`Onboarding completed successfully! Welcome to Master-Fees, ${formData.schoolName}!`);
@@ -1815,7 +1815,7 @@ export default function App() {
         <PricingStructurePage 
           onComplete={handlePricingStructureComplete} 
           onBack={handleBackToFinalOnboarding}
-          extendedFormData={extendedFormData}
+          initialData={extendedFormData}
         />
       </div>
     );

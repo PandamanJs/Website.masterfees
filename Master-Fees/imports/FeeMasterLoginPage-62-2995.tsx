@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { api } from "../utils/supabase/api";
-import logoImage from "figma:asset/d94dd5c284a7cd97402018a8dc1e040e8b704130.png";
-import imgB from "figma:asset/f2dddff10fce8c5cc0468d3c13d16d6eeadcbdb7.png";
+// import logoImage from "figma:asset/d94dd5c284a7cd97402018a8dc1e040e8b704130.png";
+// import imgB from "figma:asset/f2dddff10fce8c5cc0468d3c13d16d6eeadcbdb7.png";
+const logoImage = "/placeholder.png";
+const imgB = "/placeholder.png";
 
 interface FeeMasterLoginPageProps {
   onLogin: (schoolId: string, schoolName: string, accessToken: string, keepLoggedIn: boolean) => void;

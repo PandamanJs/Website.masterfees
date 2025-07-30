@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import svgPaths from "../imports/svg-54j7y0rp8y";
-import imgFeeMasterLoginPage from "figma:asset/ad73bfddb9e0d1de9c311e9886bad9067f61e75a.png";
+// import imgFeeMasterLoginPage from "figma:asset/ad73bfddb9e0d1de9c311e9886bad9067f61e75a.png";
+const imgFeeMasterLoginPage = "/placeholder.png";
 
 interface SignupPageProps {
   onSignup: (schoolId: string, schoolName: string, accessToken: string) => void;

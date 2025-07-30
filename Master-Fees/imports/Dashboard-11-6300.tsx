@@ -1,5 +1,6 @@
 import svgPaths from "./svg-2g3736nywj";
-import imgDashboard from "figma:asset/ad73bfddb9e0d1de9c311e9886bad9067f61e75a.png";
+// import imgDashboard from "figma:asset/ad73bfddb9e0d1de9c311e9886bad9067f61e75a.png";
+const imgDashboard = "/placeholder.png";
 
 function Sidebar() {
   return (
